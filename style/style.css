@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   background-image: url('https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80');
 }
@@ -9,4 +16,71 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.text {
+  color: white;
+  text-align: center;
+}
+#nav {
+  font-size: 40px;
+  text-align: center;
+}
+header,
+main,
+footer {
+  width: 80vw;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  font-size: 30px;
+}
+p {
+  line-height: 1.7;
+  margin: 1.5rem 0;
+}
+#nav,
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+#nav a,
+#footer a {
+  color: yellow;
+  padding: 0.25rem 1rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow (0, 0%, 0%, 0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overlay.active {
+  display: flex;
+  cursor: wait;
+}
+.loading {
+  font-size: 5rem;
+  color: #fff;
+  text-transform: uppercase;
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

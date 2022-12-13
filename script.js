@@ -4,6 +4,8 @@ const APP = {
     people: 'people/',
     planets: 'planets/',
     films: 'films/',
+    species: 'species/',
+    vehicles: 'vehicles/',
   },
   init: () => {
     APP.addListeners();
