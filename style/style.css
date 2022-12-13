@@ -54,7 +54,6 @@ p {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: yellow (0, 0%, 0%, 0.8);
   display: none;
   flex-direction: column;
   justify-content: center;
